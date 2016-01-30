@@ -39,11 +39,11 @@ ap <- rm_between(ap, "(", ")")
 
 # some manual clean up
 ap[grep("GOLLY\\.", ap)] <- "Subtitle: GOLLY"
-ap[grep(": Re-quest Vector, over!", ap)] <- "Tower : Re-quest Vector, over!"
+ap[grep(": Re-quest Vector, over!", ap)] <- "Tower : Request Vector, over!"
 
 
 # copy to clipboard so you can paste into Notepad and review progress
-writeClipboard(ap)
+# writeClipboard(ap)
 
 save(ap, file = "airplane.Rda")
 
